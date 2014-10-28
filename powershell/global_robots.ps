@@ -3,22 +3,39 @@ Import-Module WebAdministration
 $vdirPath = 'D:\Products\Web\RewriteRulesTargetSite'
 $vdirName = '_iis_globals'
 
-if (-not (Test-Path $vdirPath\robots.txt -PathType Container)) {
+# *** create the physical directory and robots.txt file ***
+if (-not (Test-Path $vdirPath -PathType Container)) {
+    Write-Host -foregroundcolor DarkGreen Creating $vdirPath
     New-Item -ItemType Directory -Force -Path $vdirPath
+}
+if (-not (Test-Path $vdirPath\robots.txt -PathType Leaf)) {
+    Write-Host -foregroundcolor DarkGreen Creating $vdirPath\robots.txt
     "User-agent: *`r`nDisallow: /" | Out-File -FilePath ($vdirPath + '\robots.txt') 
 }
 
+# *** create the rewrite rule target virtual directory  in all sites ***
 $sites = Get-ChildItem IIS:\Sites
-
 foreach ($site in $sites) {
     $siteName = $site.Name.Trim()
     if (-not (Test-Path -path IIS:\Sites\$siteName\$vdirName)) {
         Write-Host -foregroundcolor DarkGreen "Create Virtual Folder: " -NoNewLine;
         Write-Host -foregroundcolor Green $siteName\$vdirName;
-
-        Write-Output  (Test-Path -path IIS:\Sites\$siteName\)
+                
         $vdirIISPath = 'IIS:\Sites\' + $site.Name + '\' + $vdirName;
 
         New-Item $vdirIISPath -PhysicalPath $vdirPath -Type VirtualDirectory    
     }
+}
+
+# *** create the rewrite rule ***
+$obj  = Get-WebConfigurationProperty -filter '/system.webServer/rewrite/globalRules/rule' -PSPath 'MACHINE/WEBROOT/APPHOST' -Name '.' | Where-Object {$_.name -eq 'robots.txt'}
+if ($obj -eq $null) {
+    Write-Host -foregroundcolor DarkGreen 'Adding rewrite rule from "robots.txt" to "_iis_globals/robots.txt"'
+        
+    Add-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  -filter "system.webServer/rewrite/globalRules" -name "." -value @{name='robots.txt';patternSyntax='ExactMatch'}
+    Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  -filter "system.webServer/rewrite/globalRules/rule[@name='robots.txt']/match" -name "url" -value "robots.txt"
+    Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  -filter "system.webServer/rewrite/globalRules/rule[@name='robots.txt']/match" -name "negate" -value "False"
+    Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  -filter "system.webServer/rewrite/globalRules/rule[@name='robots.txt']/action" -name "type" -value "Rewrite"
+    Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  -filter "system.webServer/rewrite/globalRules/rule[@name='robots.txt']/action" -name "url" -value "_iis_globals/robots.txt"
+    Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  -filter "system.webServer/rewrite/globalRules/rule[@name='robots.txt']" -name "stopProcessing" -value "True"
 }
