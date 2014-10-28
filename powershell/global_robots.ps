@@ -1,0 +1,24 @@
+Import-Module WebAdministration
+
+$vdirPath = 'D:\Products\Web\RewriteRulesTargetSite'
+$vdirName = '_iis_globals'
+
+if (-not (Test-Path $vdirPath\robots.txt -PathType Container)) {
+    New-Item -ItemType Directory -Force -Path $vdirPath
+    "User-agent: *`r`nDisallow: /" | Out-File -FilePath ($vdirPath + '\robots.txt') 
+}
+
+$sites = Get-ChildItem IIS:\Sites
+
+foreach ($site in $sites) {
+    $siteName = $site.Name.Trim()
+    if (-not (Test-Path -path IIS:\Sites\$siteName\$vdirName)) {
+        Write-Host -foregroundcolor DarkGreen "Create Virtual Folder: " -NoNewLine;
+        Write-Host -foregroundcolor Green $siteName\$vdirName;
+
+        Write-Output  (Test-Path -path IIS:\Sites\$siteName\)
+        $vdirIISPath = 'IIS:\Sites\' + $site.Name + '\' + $vdirName;
+
+        New-Item $vdirIISPath -PhysicalPath $vdirPath -Type VirtualDirectory    
+    }
+}
