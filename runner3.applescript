@@ -39,17 +39,18 @@ on run argv
 
 			set session_cmd to {Â
 				"rtservice bus -D bus.serviceMapStore=consul -D bus.id=1", Â
-				"rtservice bus -D bus.serviceMapStore=consul -D bus.id=2 -D bus.manage.port=55291 -D bus.transports.socketio.port=55144 -D bus.peer=https://local.dev.jivehosted.com:55143", Â
+				"rtservice bus -D bus.serviceMapStore=consul -D bus.id=2 -D bus.manage.port=56290 -D bus.transports.socketio.port=55144 -D bus.peer=https://local.dev.jivehosted.com:55143", Â
 				"rtservice discovery", Â
 				"rtservice identity", Â
 				"rtservice chat", Â
-				"rtservice chat -D websocket.ww.port=55144 -D chat.manage.port=55292", Â
+				"rtservice chat -D websocket.ww.port=55144 -D chat.manage.port=56282", Â
 				"rtservice presence", Â
-				"rtservice presence -D websocket.ww.port=55144 -D presence.manage.port=55291", Â
-				"reservice idsync" Â
+				"rtservice presence -D websocket.ww.port=55144 -D presence.manage.port=56281", Â
+				"rtservice idsync" Â
 			}
-			--original 55282
-			--original 55281
+			--bus original 55290
+			--chat original 55282
+			--presense original 55281
 
 			set session_list to {0, 0, 0, 0, 0, 0, 0, 0, 0}
 
