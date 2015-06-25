@@ -45,7 +45,8 @@ tell application "iTerm"
 				set stty to my splitString(stty as text, "ttys0")
 				set stty to item 2 of stty
 				set stty to stty as integer
-				if stty ² sess_count then
+
+				if stty < sess_count then
 					set idx to stty + 1
 					set stty_name to item idx of session_names
 					set name of sess to stty_name

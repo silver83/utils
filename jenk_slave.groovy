@@ -1,4 +1,5 @@
-batch = "C:\\Users\\jnkadmin\\AppData\\Local\\Temp\\yoni_temp.bat"
+// batch = "C:\\Users\\jnkadmin\\AppData\\Local\\Temp\\yoni_temp.bat"
+batch = "/tmp/tmp.sh"
 f = new File(batch)
 writer = new PrintWriter(f)
 
@@ -20,17 +21,25 @@ writer.println("git config --global --unset pack.packSizeLimit ")
 writer.println("git config --global --unset pack.windowMemory ")
  */
 
-writer.println("wmic os get freephysicalmemory")
+writer.println("ls -la /home/jenkins/.ssh/")
 writer.close()
 
 command = new String[3]
+command[0] = "bash"
+command[1] = "-c"
+command[2] = batch
+
+/*
 command[0] = "cmd"
 command[1] = "/C"
 command[2] = "call " + batch
-
+*/
+//    .directory(new File("C:\\Users\\jnkadmin\\AppData\\Local\\Temp\\"))
 def process = new ProcessBuilder(command)
-    .directory(new File("C:\\Users\\jnkadmin\\AppData\\Local\\Temp\\"))
+    .directory(new File("/tmp"))
     .redirectErrorStream(true)
     .start()
 process.text.eachLine {println it}
 process.waitFor()
+
+
