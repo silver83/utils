@@ -1,0 +1,213 @@
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.1.log <==
+     ts: '2015-07-08T06:23:19.832Z',
+     ver: 1,
+     auth: 'eyJhbGciOiJIUzI1NiIsInZlciI6InJ0cy4wIiwia2lkIjoiMCJ9.eyJzdWIiOiJpZHN5bmMiLCJhZGRyZXNzIjoiQUFBQm9tTm1DeVRDOEJqY3N6QXhIRC1LY0EiLCJpYXQiOjE0MzYzMzY1OTl9.1Pr0tWo0wx2sO6Jvw5Kw7DXXqgudRQS2c3Ms-bPmx9o',
+     id: 'b2fc6e3f-6af9-4aaa-9716-1d8be7a5208b',
+     from: 'AAABomNmCyTC8BjcszAxHD-KcA' } }
+2015-07-08T06:23:19.839Z - info: [19290] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:19.839Z - info: [19290] Bus#handleServiceRegister address=AAABomNmCyTC8BjcszAxHD-KcA, name=idsync
+2015-07-08T06:23:19.840Z - info: [19290] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:20.085Z - info: [19290] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:20.567Z - info: [19290] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.2.log <==
+2015-07-08T06:23:18.548Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:18.549Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:18.819Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:18.821Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:19.035Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:19.466Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:19.839Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:19.841Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:20.085Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:20.568Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.3.log <==
+     from: 'AAADLRAbywOLq7wfV3IOPzbkWA' } }
+2015-07-08T06:23:18.818Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:18.819Z - info: [19299] Bus#handleServiceRegister address=AAADLRAbywOLq7wfV3IOPzbkWA, name=presence
+2015-07-08T06:23:18.820Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:19.035Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:19.465Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:19.839Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:19.840Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:20.086Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:23:20.569Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.chat.1.log <==
+2015-07-08T06:23:15.739Z - info: [19305] service master: watchdog heartbeat=1000, grace=20000, period=1000, timeout=5000
+2015-07-08T06:23:15.741Z - info: [19305] service master: info at http://yonimac:55282/manage/info
+2015-07-08T06:23:15.741Z - info: [19305] service master: health at http://yonimac:55282/manage/health
+2015-07-08T06:23:15.741Z - info: [19305] service master: metrics at http://yonimac:55282/manage/metrics
+2015-07-08T06:23:15.941Z - info: [19306] service worker: started id=1, pid=19306
+2015-07-08T06:23:16.437Z - info: [19306] rethinkdb connecting buffer=2, max=4, maxExponent=5, pool=true, discovery=false, timeoutGb=1800000, timeoutError=1000, silent=false, db=local, servers=[host=localhost, port=28015]
+2015-07-08T06:23:16.620Z - info: [19306] rethinkdb pool connected host=localhost, port=28015, buffer=2, max=4
+2015-07-08T06:23:16.645Z - info: [19306] socket connecting url=https://local.dev.jivehosted.com:55143, transport=websocket
+2015-07-08T06:23:16.681Z - info: [19306] socket connected url=https://local.dev.jivehosted.com:55143
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.chat.2.log <==
+2015-07-08T06:23:16.258Z - info: [19307] service master: watchdog heartbeat=1000, grace=20000, period=1000, timeout=5000
+2015-07-08T06:23:16.261Z - info: [19307] service master: info at http://yonimac:56282/manage/info
+2015-07-08T06:23:16.261Z - info: [19307] service master: health at http://yonimac:56282/manage/health
+2015-07-08T06:23:16.261Z - info: [19307] service master: metrics at http://yonimac:56282/manage/metrics
+2015-07-08T06:23:16.484Z - info: [19308] service worker: started id=1, pid=19308
+2015-07-08T06:23:16.996Z - info: [19308] rethinkdb connecting buffer=2, max=4, maxExponent=5, pool=true, discovery=false, timeoutGb=1800000, timeoutError=1000, silent=false, db=local, servers=[host=localhost, port=28015]
+2015-07-08T06:23:17.176Z - info: [19308] rethinkdb pool connected host=localhost, port=28015, buffer=2, max=4
+2015-07-08T06:23:17.203Z - info: [19308] socket connecting url=https://local.dev.jivehosted.com:56143, transport=websocket
+2015-07-08T06:23:17.247Z - info: [19308] socket connected url=https://local.dev.jivehosted.com:56143
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.chat.3.log <==
+2015-07-08T06:23:16.793Z - info: [19309] service master: watchdog heartbeat=1000, grace=20000, period=1000, timeout=5000
+2015-07-08T06:23:16.795Z - info: [19309] service master: info at http://yonimac:57282/manage/info
+2015-07-08T06:23:16.795Z - info: [19309] service master: health at http://yonimac:57282/manage/health
+2015-07-08T06:23:16.795Z - info: [19309] service master: metrics at http://yonimac:57282/manage/metrics
+2015-07-08T06:23:16.996Z - info: [19310] service worker: started id=1, pid=19310
+2015-07-08T06:23:17.506Z - info: [19310] rethinkdb connecting buffer=2, max=4, maxExponent=5, pool=true, discovery=false, timeoutGb=1800000, timeoutError=1000, silent=false, db=local, servers=[host=localhost, port=28015]
+2015-07-08T06:23:17.698Z - info: [19310] rethinkdb pool connected host=localhost, port=28015, buffer=2, max=4
+2015-07-08T06:23:17.729Z - info: [19310] socket connecting url=https://local.dev.jivehosted.com:57143, transport=websocket
+2015-07-08T06:23:17.770Z - info: [19310] socket connected url=https://local.dev.jivehosted.com:57143
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.discovery.log <==
+2015-07-08T06:23:14.738Z - info: [19301] service master: watchdog heartbeat=1000, grace=20000, period=1000, timeout=5000
+2015-07-08T06:23:14.740Z - info: [19301] service master: info at http://yonimac:55280/manage/info
+2015-07-08T06:23:14.740Z - info: [19301] service master: health at http://yonimac:55280/manage/health
+2015-07-08T06:23:14.740Z - info: [19301] service master: metrics at http://yonimac:55280/manage/metrics
+2015-07-08T06:23:14.935Z - info: [19302] service worker: started id=1, pid=19302
+2015-07-08T06:23:15.086Z - info: [19302] rethinkdb connecting buffer=2, max=4, maxExponent=5, pool=true, discovery=false, timeoutGb=1800000, timeoutError=1000, silent=false, db=local, servers=[host=localhost, port=28015]
+2015-07-08T06:23:15.147Z - info: [19302] service worker: listening on https://local.dev.jivehosted.com:55243
+2015-07-08T06:23:15.172Z - info: [19302] rethinkdb pool connected host=localhost, port=28015, buffer=2, max=4
+2015-07-08T06:23:15.197Z - info: [19302] socket connecting url=https://local.dev.jivehosted.com:55143, transport=websocket
+2015-07-08T06:23:15.233Z - info: [19302] socket connected url=https://local.dev.jivehosted.com:55143
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.identity.log <==
+2015-07-08T06:23:15.248Z - info: [19303] service master: watchdog heartbeat=1000, grace=20000, period=1000, timeout=5000
+2015-07-08T06:23:15.251Z - info: [19303] service master: info at http://yonimac:55287/manage/info
+2015-07-08T06:23:15.252Z - info: [19303] service master: health at http://yonimac:55287/manage/health
+2015-07-08T06:23:15.252Z - info: [19303] service master: metrics at http://yonimac:55287/manage/metrics
+2015-07-08T06:23:15.462Z - info: [19304] service worker: started id=1, pid=19304
+2015-07-08T06:23:15.620Z - info: [19304] rethinkdb connecting buffer=2, max=4, maxExponent=5, pool=true, discovery=false, timeoutGb=1800000, timeoutError=1000, silent=false, db=local, servers=[host=localhost, port=28015]
+2015-07-08T06:23:16.204Z - info: [19304] service worker: listening on https://local.dev.jivehosted.com:55246
+2015-07-08T06:23:16.227Z - info: [19304] rethinkdb pool connected host=localhost, port=28015, buffer=2, max=4
+2015-07-08T06:23:16.249Z - info: [19304] socket connecting url=https://local.dev.jivehosted.com:55143, transport=websocket
+2015-07-08T06:23:16.281Z - info: [19304] socket connected url=https://local.dev.jivehosted.com:55143
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.idsync.log <==
+2015-07-08T06:23:18.800Z - info: [19317] service master: info at http://yonimac:55289/manage/info
+2015-07-08T06:23:18.801Z - info: [19317] service master: health at http://yonimac:55289/manage/health
+2015-07-08T06:23:18.801Z - info: [19317] service master: metrics at http://yonimac:55289/manage/metrics
+2015-07-08T06:23:19.011Z - info: [19321] service worker: started id=1, pid=19321
+2015-07-08T06:23:19.135Z - info: [19321] rethinkdb connecting buffer=2, max=4, maxExponent=5, pool=true, discovery=false, timeoutGb=1800000, timeoutError=1000, silent=false, db=local, servers=[host=localhost, port=28015]
+2015-07-08T06:23:19.715Z - info: [19321] service worker: listening on http://yonimac:55249
+2015-07-08T06:23:19.730Z - info: [19321] rethinkdb pool connected host=localhost, port=28015, buffer=2, max=4
+2015-07-08T06:23:19.756Z - info: [19321] socket connecting url=https://local.dev.jivehosted.com:55143, transport=websocket
+2015-07-08T06:23:19.785Z - info: [19321] socket connected url=https://local.dev.jivehosted.com:55143
+2015-07-08T06:23:21.023Z - info: [19321] SqsQueueListener#init queueUrl=https://sqs.us-west-2.amazonaws.com/793529537854/integ_clientApp_1029
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.presence.1.log <==
+2015-07-08T06:23:17.276Z - info: [19311] service master: watchdog heartbeat=1000, grace=20000, period=1000, timeout=5000
+2015-07-08T06:23:17.280Z - info: [19311] service master: info at http://yonimac:55281/manage/info
+2015-07-08T06:23:17.280Z - info: [19311] service master: health at http://yonimac:55281/manage/health
+2015-07-08T06:23:17.280Z - info: [19311] service master: metrics at http://yonimac:55281/manage/metrics
+2015-07-08T06:23:17.492Z - info: [19312] service worker: started id=1, pid=19312
+2015-07-08T06:23:17.622Z - info: [19312] rethinkdb connecting buffer=2, max=4, maxExponent=5, pool=true, discovery=false, timeoutGb=1800000, timeoutError=1000, silent=false, db=local, servers=[host=localhost, port=28015]
+2015-07-08T06:23:17.698Z - info: [19312] rethinkdb pool connected host=localhost, port=28015, buffer=2, max=4
+2015-07-08T06:23:17.743Z - info: [19312] socket connecting url=https://local.dev.jivehosted.com:55143, transport=websocket
+2015-07-08T06:23:17.780Z - info: [19312] socket connected url=https://local.dev.jivehosted.com:55143
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.presence.2.log <==
+2015-07-08T06:23:17.806Z - info: [19313] service master: watchdog heartbeat=1000, grace=20000, period=1000, timeout=5000
+2015-07-08T06:23:17.809Z - info: [19313] service master: info at http://yonimac:56281/manage/info
+2015-07-08T06:23:17.809Z - info: [19313] service master: health at http://yonimac:56281/manage/health
+2015-07-08T06:23:17.809Z - info: [19313] service master: metrics at http://yonimac:56281/manage/metrics
+2015-07-08T06:23:18.031Z - info: [19314] service worker: started id=1, pid=19314
+2015-07-08T06:23:18.152Z - info: [19314] rethinkdb connecting buffer=2, max=4, maxExponent=5, pool=true, discovery=false, timeoutGb=1800000, timeoutError=1000, silent=false, db=local, servers=[host=localhost, port=28015]
+2015-07-08T06:23:18.227Z - info: [19314] rethinkdb pool connected host=localhost, port=28015, buffer=2, max=4
+2015-07-08T06:23:18.260Z - info: [19314] socket connecting url=https://local.dev.jivehosted.com:56143, transport=websocket
+2015-07-08T06:23:18.294Z - info: [19314] socket connected url=https://local.dev.jivehosted.com:56143
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.presence.3.log <==
+2015-07-08T06:23:18.266Z - info: [19315] service master: watchdog heartbeat=1000, grace=20000, period=1000, timeout=5000
+2015-07-08T06:23:18.269Z - info: [19315] service master: info at http://yonimac:57281/manage/info
+2015-07-08T06:23:18.269Z - info: [19315] service master: health at http://yonimac:57281/manage/health
+2015-07-08T06:23:18.269Z - info: [19315] service master: metrics at http://yonimac:57281/manage/metrics
+2015-07-08T06:23:18.485Z - info: [19316] service worker: started id=1, pid=19316
+2015-07-08T06:23:18.606Z - info: [19316] rethinkdb connecting buffer=2, max=4, maxExponent=5, pool=true, discovery=false, timeoutGb=1800000, timeoutError=1000, silent=false, db=local, servers=[host=localhost, port=28015]
+2015-07-08T06:23:18.684Z - info: [19316] rethinkdb pool connected host=localhost, port=28015, buffer=2, max=4
+2015-07-08T06:23:18.720Z - info: [19316] socket connecting url=https://local.dev.jivehosted.com:57143, transport=websocket
+2015-07-08T06:23:18.757Z - info: [19316] socket connected url=https://local.dev.jivehosted.com:57143
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.2.log <==
+2015-07-08T06:23:59.617Z - info: [19295] service worker: cleaning up
+2015-07-08T06:23:59.617Z - info: [19295] Server#socketio shutting down
+2015-07-08T06:23:59.618Z - info: [19295] BusPeers#close
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.1.log <==
+2015-07-08T06:23:59.976Z - info: [19290] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.3.log <==
+2015-07-08T06:23:59.976Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.2.log <==
+2015-07-08T06:23:59.976Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.1.log <==
+2015-07-08T06:24:00.664Z - info: [19290] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.3.log <==
+2015-07-08T06:24:00.664Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.2.log <==
+2015-07-08T06:24:00.664Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.1.log <==
+2015-07-08T06:24:01.591Z - info: [19290] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.3.log <==
+2015-07-08T06:24:01.591Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.2.log <==
+2015-07-08T06:24:01.591Z - info: [19295] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+2015-07-08T06:24:03.618Z - warn: [19295] service worker: hasta la vista
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.1.log <==
+2015-07-08T06:24:03.627Z - info: [19290] BusPeers#handlePeerClose socketio undefined
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.3.log <==
+2015-07-08T06:24:03.627Z - info: [19299] BusPeers#handlePeerClose socketio undefined
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.chat.2.log <==
+2015-07-08T06:24:03.627Z - warn: [19308] socket disconnected 
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.presence.2.log <==
+2015-07-08T06:24:03.627Z - warn: [19314] socket disconnected 
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.3.log <==
+2015-07-08T06:24:03.627Z - info: [19299] Router#removeBus busId=2
+2015-07-08T06:24:03.627Z - info: [19299] BusPeers#cleanup { peer: true, busId: 'bus-2', clientId: 2 }
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.1.log <==
+2015-07-08T06:24:03.627Z - info: [19290] Router#removeBus busId=2
+2015-07-08T06:24:03.629Z - info: [19290] BusPeers#cleanup { peer: true, busId: 'bus-2', clientId: 2 }
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.3.log <==
+2015-07-08T06:24:06.631Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.1.log <==
+2015-07-08T06:24:06.632Z - info: [19290] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
+
+==> /Users/yoni.shalom/Code/chime-backend/logs/local.bus.3.log <==
+2015-07-08T06:24:06.631Z - info: [19299] BusPeers#connectToPeer  { id: 'bus-2',
+  address: 'https://local.dev.jivehosted.com:56143',
+  retryCount: 1,
+  connecting: false,
+  pending: true,
+  cooldown: false }
+2015-07-08T06:24:06.634Z - warn: [19299] BusPeers#handlePeerError socketio Error: connect ECONNREFUSED
+    at errnoException (net.js:904:11)
+    at Object.afterConnect [as oncomplete] (net.js:895:19)
+2015-07-08T06:24:06.634Z - info: [19299] Router#removeBus busId=9Q-72snGVY96c-wBPbhp3w
+2015-07-08T06:24:06.634Z - info: [19299] BusPeers#cleanup { peer: true,
+  busId: 'bus-2',
+  clientId: '9Q-72snGVY96c-wBPbhp3w' }
+2015-07-08T06:24:09.638Z - info: [19299] BusPeers#onPeerSetChange 0=bus-1, 1=bus-3, 2=bus-2
